@@ -18,7 +18,9 @@ class NotesApplication{
         /** This function lists out each of 
         the notes in the notes list in the following format**/
         	list(){
-        		
+        		for(var i=0;i<notes.length;i++){
+        		return "NOTEID:"+i+"  "+this.notes[i]+" "+this.author,'	
+        		}
         	}
 			
 		}
