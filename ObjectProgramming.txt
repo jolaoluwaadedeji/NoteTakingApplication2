@@ -1,0 +1,14 @@
+	class NotesApplication{
+		
+			constructor(author){
+				this.author=author;
+				const notes=[]
+			}
+			function create(note_content){
+			
+				
+			}
+			
+		}
+		
+		
