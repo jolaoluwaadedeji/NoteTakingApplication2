@@ -13,13 +13,13 @@ class NotesApplication{
 		
 			create(note_content){
 			   
-				this.notes.push();
+				this.notes.push(note_content);
 			}
         /** This function lists out each of 
         the notes in the notes list in the following format**/
         	list(){
         		for(var i=0;i<this.notes.length;i++){
-        		return "NOTEID:"+i+"  "+this.notes[i]+" "+this.author,'	
+        		return "NOTEID:"+i+"  "+this.notes[i]+" "+this.author	
         		}
         	}
 			
