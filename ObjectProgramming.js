@@ -1,4 +1,4 @@
-		 /** Class App  **/
+		 /** Beginning of Class NotesApplication  **/
 class NotesApplication  {
 		/** class constructor that instatiate an object**/
 
@@ -9,11 +9,12 @@ class NotesApplication  {
 				}
 				else {
 
-					alert ('Input not a string')
+					alert ('Input is not a string')
 				    
 				    }
 			}
-		/** The create function create a notes list/array to store all the 
+
+		/** The create function creates a notes list/array to store all the 
 		notes as an instance property**/
 		
 			create (note_content) {
@@ -26,20 +27,21 @@ class NotesApplication  {
 		     	 
 		       else {
 
-		         	alert ('Input not a string')
+		         	alert ('Input is not a string')
 			       
 			       }
-			} 	
+			}
+
         /** The listNotes function lists out each of 
-        the notes in the notes list in the following format**/
+        the notes in the notes list**/
 
         	listNotes () {
         	   		    
 
         	   for (let i = 0; i < this.notes.length; i++) {
   				
-  						console.log (`NOTE ID: ${i} \n ${this.notes[i]}\n\n`);
-  				        console.log (`\nBy Author:${this.author}`);
+  					console.log (`NOTE ID: ${i} \n ${this.notes[i]}\n\n`);
+  				    console.log (`\nBy Author:${this.author}`);
 
   					
         			}
@@ -62,7 +64,7 @@ class NotesApplication  {
           	
           	  else {
 
-          	       alert ('Input not a number')
+          	       alert ('Input is not a number')
 
           	       }
           	
@@ -71,37 +73,39 @@ class NotesApplication  {
         /**The search function take a search string, search_text and 
         returns all the notes with that text within it in the following format
         Showing results for search ‘[<search_text>]’**/
+  			
   			search (search_text){
-  		    if (typeof (search_text)	=== 'string') {
 
-  				for (let i = 0; i < this.notes.length; i++){
+  		        if (typeof (search_text)	=== 'string') {
 
-  					if (this.notes[i].indexOf(search_text) >= 0){
+  				  for (let i = 0; i < this.notes.length; i++) {
+
+  					if (this.notes[i].indexOf(search_text) >= 0) {
 
   						console.log(`Showing results for search ${search_text} \n NOTEID: ${i} \n ${this.notes[i]}`);
-  				 		console.log(`\nBy Author:${this.author}`);
+  				 		console.log(`By Author:${this.author}`);
   					
-  					}
+  					 }
 	  				
-	  			    }
+	  			     }
 	  			
-	  			
-	    	    	}
+	 	    	   	 }
   				
   			    else {
 
-  				     alert ('Input not a string')	
+  				     alert ('Input is not a string')	
   			        
   			         }
   			}
 
   		/**The deleteNote function deletes the note at the 
   		index note_id of the notes list**/
+  			
   			deleteNote (note_id) {
   			 
   			 	if (typeof (note_id) === 'number') {
 
-  				return this.notes.splice(note_id,1)
+  				     return this.notes.splice(note_id,1)
 
   				     }
   				     
@@ -114,6 +118,7 @@ class NotesApplication  {
 
   		/**The edit function replaces the content in the 
   		note at note_id with new_content**/
+  			 
   			 edit (note_id,new_content) {
   			 	
   			 	if (typeof (note_id) === 'number' && typeof (new_content)	=== 'string') {
