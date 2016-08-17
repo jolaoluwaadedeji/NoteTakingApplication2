@@ -1,4 +1,5 @@
 		 /** Beginning of Class NotesApplication  **/
+
 class NotesApplication  {
 		/** class constructor that instatiate an object**/
 
@@ -40,8 +41,8 @@ class NotesApplication  {
 
         	   for (let i = 0; i < this.notes.length; i++) {
   				
-  					console.log (`NOTE ID: ${i} \n ${this.notes[i]}\n\n`);
-  				    console.log (`\nBy Author:${this.author}`);
+  					console.log (`NOTE ID: ${i} \n ${this.notes[i]}\n`);
+  				    console.log (`\nBy Author:${this.author}\n`);
 
   					
         			}
@@ -82,9 +83,10 @@ class NotesApplication  {
 
   					if (this.notes[i].indexOf(search_text) >= 0) {
 
-  						console.log(`Showing results for search ${search_text} \n NOTEID: ${i} \n ${this.notes[i]}`);
-  				 		console.log(`By Author:${this.author}`);
-  					
+  					  console.log(`Showing results for search ${search_text} \n NOTE ID: ${i} \n ${this.notes[i]}`);
+  				 	  
+  				 	  console.log(`\n By Author:${this.author}`);
+  					 
   					 }
 	  				
 	  			     }
